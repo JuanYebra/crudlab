@@ -1,0 +1,75 @@
+body, html{
+    height:100%;
+}
+body{
+    padding:0;
+    margin:0;
+}
+h1, h2, h3{
+    font-family:'helvetica neue', helvetica, arial, sans-serif;
+    color:#222;
+    margin:0 0 10px;
+}
+section li{
+    margin:0 0 10px;
+}
+h1{
+    font-size:40px;
+    font-weight:600;
+}
+h2{
+    font-size:18px;
+    font: weight 200px;;
+}
+h3{
+    font-size:15px;
+    font: weight 200px;;
+}
+
+.labelin{
+    color: black;
+    font-size: 20px;
+    font-family:'helvetica neue', helvetica, arial, sans-serif;
+}
+
+
+.wrapper{
+    overflow:hidden;
+}
+
+section{
+    padding:30px 30px 30px 80px;
+    -moz-transition:all 200ms ease-in;
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+
+}
+
+
+.buttonlink{
+    text-decoration: none;
+    background-color: #0b2b3a;
+    color: white;
+    font-size: 20px;
+    font-family:'helvetica neue', helvetica, arial, sans-serif;
+    padding: 8px 40px;
+    
+}
+
+
+input[type="checkbox"]{
+    display:none;
+}
+input[type="checkbox"]:checked ~ nav{
+    margin:0;
+}
+input[type="checkbox"]:checked ~ label{
+    left:260px;
+}
+input[type="checkbox"]:checked ~ section{
+    -webkit-transform:translate3d(260px, 0, 0);
+    -moz-transform:translate3d(260px, 0, 0);
+    -o-transform:translate3d(260px, 0, 0);
+    transform:translate3d(260px, 0, 0);
+}
