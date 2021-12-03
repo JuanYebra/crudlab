@@ -9,7 +9,7 @@
 	$resultado = $sentencia->execute([$codigo]);
 
 	if ($resultado === TRUE) {
-		header('Location: ../vista/Principal.php');
+		header('Location: ../index.php');
 	}else{
 		echo "Error";
 	}

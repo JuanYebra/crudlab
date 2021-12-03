@@ -1,7 +1,7 @@
 <?php 
 	//print_r($_POST);
 	if (!isset($_POST['oculto'])) {
-		header('Location: ../vista/Principal.php');
+		header('Location: ../index.php');
 	}
 
 	include '../controller/conexion.php';
@@ -14,7 +14,7 @@
 	$resultado = $sentencia->execute([$departamento2,$responsable2,$usuario2, $id2]);
 
 	if ($resultado === TRUE) {
-		header('Location: ../vista/Principal.php');
+		header('Location: ../index.php');
 	}else{
 		echo "Error";
 	}

@@ -14,7 +14,7 @@ $resultado = $sentencia->execute([$nombre, $responsable, $user]);
 
 if ($resultado == TRUE) {
     //echo "Insertado correctamente";
-    header('Location: ../vista/Principal.php');
+    header('Location: ../index.php');
 } else {
     echo "Error";
 }
